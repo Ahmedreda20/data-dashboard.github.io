@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="+201145099681">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="Admin-dashboard-create-cv-site" content="Admin-dashboard-create-cv-site">
+    <link rel="icon" href="./settings.png" sizes="128" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Admin data</title>
+</head>
+<body>
+    <header>
+        <div class="burger">
+
+            <input type="checkbox" id="bar">
+            <label for="bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </label>
+        </div>
+        <div class="mood">
+            <div class="mood-box">
+                <input type="checkbox"  id="mood">
+                <label for="mood">
+                    <span></span>
+                </label>
+                Mood
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-box">
+                <form class="form-search">
+                <input type="search" maxlength="28" autocomplete="off" placeholder="الخاص بالمستخدم ID ادخل ال "  id="search" required>
+            </form>
+            </div>
+            <div class="search">
+                <button class="close-btn">اغلاق</button>
+                <nav>
+                    <ul>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div class="all-data-container">
+    <div class="empty"></div>
+    <nav class="users-id">
+        <p> المستخدمين ID</p>
+        <ul>
+        </ul>
+    </nav>
+    <nav class="cv-id">
+        <p> السيرة الذاتية للمستخدمين ID</p>
+        <ul>
+        </ul>
+    </nav>
+    <nav class="comments">
+        <p>اراء وتقييمات المستخدمين</p>
+        <button class="btn-visit">قم بزيارة لوحة التحكم</button>
+    </nav>
+
+</div>
+<div class="users-container">
+<div class="all-data-box">
+    
+    <div class="data-users cv">
+        <div class="all">
+            <div class="users">
+                <svg>
+                    <circle cx="50" cy="50" r="50"></circle>
+                    <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <span></span>
+            </div>
+            <p>عدد السير الذاتية التي تم انشأها</p>
+        </div>
+    </div>
+    
+    <div class="data-users">
+        <div class="all">
+        <div class="users user">
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50" id="num-users"></circle>
+            </svg>
+            <span></span>
+        </div>
+        <p>عدد المستخدمين</p>
+    </div>
+    </div>
+
+    <div class="data-users images">
+        <div class="all">
+        <div class="users">
+            <svg>
+                <circle cx="50" cy="50" r="50"></circle>
+                <circle cx="50" cy="50" r="50"></circle>
+            </svg>
+            <span></span>
+
+        </div>
+        <p>عدد الصور التي تم رفعها</p>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="opinions-container">
+    <div class="opinions-box">
+        <div class="all-data-op">
+            <div class="header">
+                <p>الاراء وتقييمات المستخدمين</p>
+            </div>
+            <nav class="all-users">
+                <ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="all-data-op">
+            <div class="nav-close">
+                <label for="nav" id="nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="header">
+                <p>لوحة التحكم</p>
+            </div>
+            <div class="all-data-chat">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pied-piper-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-pied-piper-alt fa-w-18 fa-7x"><path fill="currentColor" d="M244 246c-3.2-2-6.3-2.9-10.1-2.9-6.6 0-12.6 3.2-19.3 3.7l1.7 4.9zm135.9 197.9c-19 0-64.1 9.5-79.9 19.8l6.9 45.1c35.7 6.1 70.1 3.6 106-9.8-4.8-10-23.5-55.1-33-55.1zM340.8 177c6.6 2.8 11.5 9.2 22.7 22.1 2-1.4 7.5-5.2 7.5-8.6 0-4.9-11.8-13.2-13.2-23 11.2-5.7 25.2-6 37.6-8.9 68.1-16.4 116.3-52.9 146.8-116.7C548.3 29.3 554 16.1 554.6 2l-2 2.6c-28.4 50-33 63.2-81.3 100-31.9 24.4-69.2 40.2-106.6 54.6l-6.3-.3v-21.8c-19.6 1.6-19.7-14.6-31.6-23-18.7 20.6-31.6 40.8-58.9 51.1-12.7 4.8-19.6 10-25.9 21.8 34.9-16.4 91.2-13.5 98.8-10zM555.5 0l-.6 1.1-.3.9.6-.6zm-59.2 382.1c-33.9-56.9-75.3-118.4-150-115.5l-.3-6c-1.1-13.5 32.8 3.2 35.1-31l-14.4 7.2c-19.8-45.7-8.6-54.3-65.5-54.3-14.7 0-26.7 1.7-41.4 4.6 2.9 18.6 2.2 36.7-10.9 50.3l19.5 5.5c-1.7 3.2-2.9 6.3-2.9 9.8 0 21 42.8 2.9 42.8 33.6 0 18.4-36.8 60.1-54.9 60.1-8 0-53.7-50-53.4-60.1l.3-4.6 52.3-11.5c13-2.6 12.3-22.7-2.9-22.7-3.7 0-43.1 9.2-49.4 10.6-2-5.2-7.5-14.1-13.8-14.1-3.2 0-6.3 3.2-9.5 4-9.2 2.6-31 2.9-21.5 20.1L15.9 298.5c-5.5 1.1-8.9 6.3-8.9 11.8 0 6 5.5 10.9 11.5 10.9 8 0 131.3-28.4 147.4-32.2 2.6 3.2 4.6 6.3 7.8 8.6 20.1 14.4 59.8 85.9 76.4 85.9 24.1 0 58-22.4 71.3-41.9 3.2-4.3 6.9-7.5 12.4-6.9.6 13.8-31.6 34.2-33 43.7-1.4 10.2-1 35.2-.3 41.1 26.7 8.1 52-3.6 77.9-2.9 4.3-21 10.6-41.9 9.8-63.5l-.3-9.5c-1.4-34.2-10.9-38.5-34.8-58.6-1.1-1.1-2.6-2.6-3.7-4 2.2-1.4 1.1-1 4.6-1.7 88.5 0 56.3 183.6 111.5 229.9 33.1-15 72.5-27.9 103.5-47.2-29-25.6-52.6-45.7-72.7-79.9zm-196.2 46.1v27.2l11.8-3.4-2.9-23.8zm-68.7-150.4l24.1 61.2 21-13.8-31.3-50.9zm84.4 154.9l2 12.4c9-1.5 58.4-6.6 58.4-14.1 0-1.4-.6-3.2-.9-4.6-26.8 0-36.9 3.8-59.5 6.3z" class=""></path></svg>
+                <nav class="user-chat-all-data">
+                    <ul>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="controls">
+                <form action="">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-7x"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z" class=""></path></svg>
+                    <input type="email" name="userMail" id="user-mail" required readonly value="">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="envelope-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope-open fa-w-16 fa-7x"><path fill="currentColor" d="M349.32 52.26C328.278 35.495 292.938 0 256 0c-36.665 0-71.446 34.769-93.31 52.26-34.586 27.455-109.525 87.898-145.097 117.015A47.99 47.99 0 0 0 0 206.416V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V206.413a47.989 47.989 0 0 0-17.597-37.144C458.832 140.157 383.906 79.715 349.32 52.26zM464 480H48c-8.837 0-16-7.163-16-16V206.161c0-4.806 2.155-9.353 5.878-12.392C64.16 172.315 159.658 95.526 182.59 77.32 200.211 63.27 232.317 32 256 32c23.686 0 55.789 31.27 73.41 45.32 22.932 18.207 118.436 95.008 144.714 116.468a15.99 15.99 0 0 1 5.876 12.39V464c0 8.837-7.163 16-16 16zm-8.753-216.312c4.189 5.156 3.393 12.732-1.776 16.905-22.827 18.426-55.135 44.236-104.156 83.148-21.045 16.8-56.871 52.518-93.318 52.258-36.58.264-72.826-35.908-93.318-52.263-49.015-38.908-81.321-64.716-104.149-83.143-5.169-4.173-5.966-11.749-1.776-16.905l5.047-6.212c4.169-5.131 11.704-5.925 16.848-1.772 22.763 18.376 55.014 44.143 103.938 82.978 16.85 13.437 50.201 45.69 73.413 45.315 23.219.371 56.562-31.877 73.413-45.315 48.929-38.839 81.178-64.605 103.938-82.978 5.145-4.153 12.679-3.359 16.848 1.772l5.048 6.212z" class=""></path></svg>
+                    <input type="text" id='message' name="sendOp" placeholder="ادخل الرسالة التي تريد ان ترسلها لتلك المستخدم" required>
+                    <button class="btn-sent" name="opSend" type="submit">ارسال</button>
+                </form>
+                </div>
+        </div>
+    </div>
+
+</div>
+    <div class="container-data">
+        <table>
+        </table>
+    </div>
+
+    <div class="not">
+        <p></p>
+        <span></span>
+    </div>
+    <script src="../create/jquery-3.5.1.min (1).js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+    
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCE1UG2U-fQ33pNjUik65eTlkMbUUH8m64",
+        authDomain: "free-cv-0.firebaseapp.com",
+        databaseURL: "https://free-cv-0.firebaseio.com",
+        projectId: "free-cv-0",
+        storageBucket: "free-cv-0.appspot.com",
+        messagingSenderId: "77785431839",
+        appId: "1:77785431839:web:a5365a7e103c0ad5c6fa2a",
+        measurementId: "G-L4Y1EXXJB8"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript">
+    
+    
+        var db = firebase.firestore();
+
+
+    var form  = document.querySelector('.form-search');
+    var sb  = document.querySelector('.search');
+    var search  = document.getElementById('search');
+    $(search).focus(function(){
+        if($(sb).css('display') === 'none'){
+            $(sb).fadeIn();
+        }
+    });
+    $('.close-btn').click(function(){
+        $(sb).fadeOut();
+    });
+    form.addEventListener('submit' , (e) =>{
+        e.preventDefault();
+        db.collection('search-box').doc().set({
+            val: search.value
+        });
+        form.reset();
+        $(sb).fadeOut();
+        $('.not').fadeIn();
+        $('.not p').html('لقد قمت باضافة عنصر جديد انتظر بضع ثواني حتى يتم اضافة تلك العنصر في الداتا');
+        setInterval(() => {
+            location.reload();
+        }, 2000);
+});
+
+db.collection("search-box").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+    
+    $('.search nav ul').append('<li data-id=' + doc.id + '>' + doc.data().val + '<div class="close"><span></span><span></span></div></li>')
+
+});
+$('.close').click(function(){
+    $(this.parentElement).fadeOut();
+    setInterval(() => {
+        $(this.parentElement).remove();
+    }, 1000);
+    db.collection('search-box').doc($(this.parentElement).attr('data-id')).delete().then(function(){
+    }).catch(error =>{
+        console.log(error.message)
+    })
+});
+
+});
+
+
+    db.collection("users").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+
+    var all = document.querySelectorAll('.container-data table tr');
+
+    $('.container-data table').append('<tr data-id='+ doc.id +'><td><div class="user-img"><div class="img"><img src="" id=' + doc.id + ' alt="user-photo"/></div></div><div class="user-data"><div class="data"><span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-7x"><path fill="currentColor" d="M313.6 288c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zM416 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-41.6C32 365.9 77.9 320 134.4 320c19.6 0 39.1 16 89.6 16 50.4 0 70-16 89.6-16 56.5 0 102.4 45.9 102.4 102.4V464zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z" class=""></path></svg>  ' + doc.data().name +  '  </span><span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="at" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-at fa-w-16 fa-7x"><path fill="currentColor" d="M256 8C118.941 8 8 118.919 8 256c0 137.058 110.919 248 248 248 52.925 0 104.68-17.078 147.092-48.319 5.501-4.052 6.423-11.924 2.095-17.211l-5.074-6.198c-4.018-4.909-11.193-5.883-16.307-2.129C346.93 457.208 301.974 472 256 472c-119.373 0-216-96.607-216-216 0-119.375 96.607-216 216-216 118.445 0 216 80.024 216 200 0 72.873-52.819 108.241-116.065 108.241-19.734 0-23.695-10.816-19.503-33.868l32.07-164.071c1.449-7.411-4.226-14.302-11.777-14.302h-12.421a12 12 0 0 0-11.781 9.718c-2.294 11.846-2.86 13.464-3.861 25.647-11.729-27.078-38.639-43.023-73.375-43.023-68.044 0-133.176 62.95-133.176 157.027 0 61.587 33.915 98.354 90.723 98.354 39.729 0 70.601-24.278 86.633-46.982-1.211 27.786 17.455 42.213 45.975 42.213C453.089 378.954 504 321.729 504 240 504 103.814 393.863 8 256 8zm-37.92 342.627c-36.681 0-58.58-25.108-58.58-67.166 0-74.69 50.765-121.545 97.217-121.545 38.857 0 58.102 27.79 58.102 65.735 0 58.133-38.369 122.976-96.739 122.976z" class=""></path></svg>  ' + doc.data().email+'  </span><span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="key" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-key fa-w-16 fa-7x"><path fill="currentColor" d="M336 32c79.529 0 144 64.471 144 144s-64.471 144-144 144c-18.968 0-37.076-3.675-53.661-10.339L240 352h-48v64h-64v64H32v-80l170.339-170.339C195.675 213.076 192 194.968 192 176c0-79.529 64.471-144 144-144m0-32c-97.184 0-176 78.769-176 176 0 15.307 1.945 30.352 5.798 44.947L7.029 379.716A24.003 24.003 0 0 0 0 396.686V488c0 13.255 10.745 24 24 24h112c13.255 0 24-10.745 24-24v-40h40c13.255 0 24-10.745 24-24v-40h19.314c6.365 0 12.47-2.529 16.971-7.029l30.769-30.769C305.648 350.055 320.693 352 336 352c97.184 0 176-78.769 176-176C512 78.816 433.231 0 336 0zm48 108c11.028 0 20 8.972 20 20s-8.972 20-20 20-20-8.972-20-20 8.972-20 20-20m0-28c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" class=""></path></svg>  '  + doc.data().password + '  </span><span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="mobile-android" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-mobile-android fa-w-10 fa-7x"><path fill="currentColor" d="M196 448h-72c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12zM320 48v416c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h224c26.5 0 48 21.5 48 48zm-32 0c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v416c0 8.8 7.2 16 16 16h224c8.8 0 16-7.2 16-16V48z" class=""></path></svg>  ' + doc.data().phone + '  </span></div></div><div class="number"><div class="num">' + all.length + '</div></div></td></tr>')
+     $('.user circle:last-child').css('stroke-dashoffset' , 'calc(315 - (315 * ' + all.length + ' "+1") / 100)')
+    $('.user span').html( all.length +1 +'+')
+    $('.users-id ul').append('<li><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>' + doc.id + '</li>')
+});
+
+});
+
+db.collection("cv").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+    var all = document.querySelectorAll('.cv-id  li');
+    $('.cv-id ul').append('<li><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-long-arrow-right fa-w-14 fa-7x"><path fill="currentColor" d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>' + doc.id + '</li>')
+     $('.cv circle:last-child').css('stroke-dashoffset' , 'calc(315 - (315 * ' + all.length + ' "+1") / 100)')
+     $('.cv span').html( all.length +1 +'+')
+});
+});
+
+var btn = document.getElementById('bar');
+var all_data = document.querySelector('.all-data-container');
+var btn_container = document.querySelector('.burger');
+btn.addEventListener('click' , function(){
+    if(btn.checked){
+        all_data.style.transform = "none"
+        all_data.style.right = "0"
+    }else{
+        all_data.style.transform = "translateX(100%)"
+        all_data.style.right = "-20%"
+    }
+});
+
+db.collection("op").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        $('.all-users ul').append('<li data-id=' + doc.id + '><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bullhorn" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-bullhorn fa-w-18 fa-7x"><path fill="currentColor" d="M544 184.88V32c0-8.74-6.98-32-31.99-32H512c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64l-.48 32c0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h106.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.12c19.05-11.09 32-31.49 32-55.12.01-23.63-12.94-44.03-31.99-55.12zM223.76 480l-105.89-.03c-14.83-30.56-22.35-62.19-22.36-95.49l.48-32L96 352h99.33c-2.31 10.7-3.81 21.43-3.81 32 0 35.29 11.3 68.78 32.24 96zM64 320c-17.64 0-32-14.36-32-32v-96c0-17.64 14.36-32 32-32h192v160H64zm448.05 126.93c-.04.25-.13.58-.25.9l-84.83-67.87C386.99 348 338.54 328.14 288 322.13V157.87c50.54-6.01 98.99-25.87 138.98-57.84l84.87-67.9c.03.03.06.05.08.05.04 0 .06-.05.07-.17l.05 414.92z" class=""></path></svg><span>' + doc.data().name + '</span><span>' + doc.data().content + '</span></li>')
+
+
+    });
+
+$(document).ready(function(){
+
+    $('.all-users  svg').click(function(){
+
+       var par = document.querySelectorAll('.user-chat-all-data ul li');
+        for(var i = 0; i < par.length; i++){
+            var x = par[i];
+            x.remove();
+        }
+        db.collection('op').doc($(this.parentElement).attr('data-id')).get().then(function(doc){
+        //get all data from data-id of li in all users class name svg when click on it.            
+        $('.user-chat-all-data ul').append('<li data-id=' +doc.id + '><div class="user-img-chat"><img src="https://i.postimg.cc/xqkhSLNb/man.png"></div><div class="user-message"><span><h1>@' + doc.data().name + '</h1><p dir="auto !important">' +doc.data().content + '</p><a href="mailto:">' + doc.data().email + '</a><span id="timer">10:10 PM</span></span></div><button class="btn-delete">حذف</button><button class="btn-reply">رد</button></li>')
+    $('.btn-delete').click(function(){
+    $(this.parentElement).remove()
+    $('#user-mail').val('')
+    });  
+    $('.btn-reply').click(function(){
+        var mail = $(this.parentElement.children[1].children[0].children[2]).html();
+        $('#user-mail').val(mail)
+    });  
+    });
+
+}); 
+});
+}); 
+var btn_admin  = document.getElementById('nav');
+var admin_chat  = document.querySelector('.opinions-container');
+
+var btn_open = document.querySelector('.btn-visit');
+btn_admin.addEventListener('click' ,  function(){
+    $(admin_chat).fadeOut();
+        $('body').css('overflow' , 'hidden auto');
+
+});
+btn_open.addEventListener('click' ,  function(){
+        $(admin_chat).fadeIn();
+            if(admin_chat.style.display  === 'block'){
+                $('body').css('overflow' , 'hidden');
+            }
+});
+
+var btn_mood  = document.getElementById('mood');
+
+btn_mood.addEventListener('click' , function(){
+    if(this.checked){ 
+        localStorage.setItem('bgcolor' ,'#aec3f060');
+        localStorage.setItem('bgcolor-items' ,'#fff');
+        localStorage.setItem('colors' ,'#000');
+        localStorage.setItem('burger' ,'#222635');
+        localStorage.setItem('circls-stroke' ,'#00ff77');
+        localStorage.setItem('mood' , '30px');
+    }else{
+        localStorage.setItem('mood' , '3px');
+        localStorage.setItem('bgcolor' ,'#222635');
+        localStorage.setItem('bgcolor-items' ,'#383e56');
+        localStorage.setItem('colors' ,'#fff');
+        localStorage.setItem('burger' ,'#fff');
+        localStorage.setItem('circls-stroke' ,'#c70039');
+    }
+        $('body').css('background' , localStorage.getItem('bgcolor'));
+        $('.users-container').css('background' ,localStorage.getItem('bgcolor-items'));
+        $('.container-data').css('background' , localStorage.getItem('bgcolor-items'));
+        $('.users-container').css('color' , localStorage.getItem('colors'));
+        $('.container-data').css('color' , localStorage.getItem('colors'));
+        $('.users svg circle:last-child').css('stroke' , localStorage.getItem('circls-stroke'));
+        $('.burger label span').css('background' , localStorage.getItem('burger'));
+        $('.mood label span').css('left' , localStorage.getItem('mood'));
+
+});
+        $('.mood label span').css('left' , localStorage.getItem('mood'));
+        $('body').css('background' , localStorage.getItem('bgcolor'))
+        $('.users-container').css('background' ,localStorage.getItem('bgcolor-items'));
+        $('.container-data').css('background' , localStorage.getItem('bgcolor-items'));
+        $('.users-container').css('color' , localStorage.getItem('colors'));
+        $('.container-data').css('color' , localStorage.getItem('colors'));
+        $('.users svg circle:last-child').css('stroke' , localStorage.getItem('circls-stroke'));
+        $('.burger label span').css('background' , localStorage.getItem('burger'));
+
+    </script>
+</body>
+</html>
